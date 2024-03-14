@@ -10,21 +10,50 @@
         padding: 20px
     .mobile-menu-button
         display: block
+
+    .item-title
+        &-content
+            padding:  40px 30px
+
+    
+     
+    
      
 
 
 // ≥992px
 +media-breakpoint-down(md)
+   
     
     
     
 
 // ≥768px
 +media-breakpoint-down(sm)
+    .first-section
+        padding-top: math.div($gutter, 2)
+
+    .container-fluid
+        padding: math.div($gutter, 2) 0
+
+    .top-add
+        margin-bottom: math.div($gutter, 2)
+
+    .no-gutters
+        .pattern
+            margin-bottom: math.div($gutter, 2)   
     
 
 // ≥576px
 +media-breakpoint-down(xs)
+
+    .logo
+        font-size: 19px
+        padding-left: math.div($gutter, 2)
+
+    .search-wrap
+        .search
+            padding-right: $gutter    
 
 
 /*==========  Mobile First  ==========*/
