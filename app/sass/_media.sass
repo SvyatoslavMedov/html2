@@ -15,12 +15,10 @@
         &-content
             padding:  40px 30px
 
-    
-     
-    
-     
+    .second-section, .third-section
+        padding: math.div($gutter, 2) 0         
 
-
+    
 // ≥992px
 +media-breakpoint-down(md)
    
@@ -31,7 +29,9 @@
 // ≥768px
 +media-breakpoint-down(sm)
     .first-section
-        padding-top: math.div($gutter, 2)
+        padding: 
+            top: math.div($gutter, 2)
+            bottom: math.div($gutter, 2)
 
     .container-fluid
         padding: math.div($gutter, 2) 0
@@ -39,9 +39,12 @@
     .top-add
         margin-bottom: math.div($gutter, 2)
 
-    .no-gutters
+    .g-0
         .pattern
-            margin-bottom: math.div($gutter, 2)   
+            margin-bottom: math.div($gutter, 2)
+
+    .item-news
+        margin: math.div($gutter, 2) 0 0           
     
 
 // ≥576px
