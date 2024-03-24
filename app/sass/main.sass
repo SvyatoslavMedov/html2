@@ -480,6 +480,149 @@ section
 		&-content
 			padding: 40px 40px 25px
 
+.button
+	display: inline-block
+	border: none
+	color: #ffffff
+	text-decoration: none
+	background-color: $accent
+	padding: 12px 40px
+	font-size: 14px
+	text-transform: uppercase
+	font-weight: 600
+	border-radius: 10em
+	text-align: center
+	position: relative
+	outline: none
+	cursor: pointer
+	transition: background-color .1s ease
+	&:hover, &:focus
+		text-decoration: none
+		color: #ffffff
+	&:hover
+		background-color: lighten($accent,5%)
+	&:active
+		background-color: darken($accent,5%)
 
-// ALWAYS END
+.s_more
+	padding: $gutter*2 0
+	background-color: #f5f5f5
+
+.main-footer
+	background-color: $dark-blue
+	padding: 25px 0
+	border-bottom: 1px solid rgba(#fff, .1)
+.bottom-footer
+	background-color: $dark-blue
+	padding: 25px 0 35px
+	.logo
+		display: inline-block
+	p
+		color: 	rgba(#fff, .2)
+		font-size: 12px
+		margin: 5px
+	.footer-copy
+		color: rgba(#fff, .45)
+		font-size: 13px
+		font-family: baron-g, sans-serif
+
+.footer-menu
+	li
+		&.active
+			text-decoration: underline
+			background: none
+			a
+				background: none
+		a
+			font-size: 15px
+			padding: 0 10px
+			&:hover
+				text-decoration: underline
+				background: none
+
+nav.soc
+	padding: 15px 0 20px
+	ul, li
+		margin: 0
+		padding: 0
+		list-style-type: none
+		text-align: center
+	li
+		display: inline-block
+		a
+			display: block
+			text-align: center
+			border: 1px solid rgba(#fff, .1)
+			border-radius: 10em
+			width: 52px
+			height: 52px
+			line-height: 50px
+			color: #ffffff
+			font-size: 24px
+			margin: 4px
+			transition: border-color .25s ease, opacity .25s ease
+			.fa
+				transition: opacify .25s ease
+				opacity: 0.75
+			&:hover
+				border-color: rgba(#fff, .35)
+				.fa
+					opacity: 1	
+	
+.logo-footer
+	span
+		color: $accent	
+
+
+
+.cat-header
+	background-size: cover
+	background-position: center
+	position: relative
+	&::before
+		content: ''
+		opacity: 0.25
+		background-color: #000000
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+	&-block
+		position: relative
+		padding: 100px 80px 100px
+		color: #ffffff
+		background-color: rgba($dark, .8)
+		&::before
+			content: ''
+			opacity: 0.2
+			transition: opacity .25s ease, top .25s ease, left .25s ease, bottom .25s ease, right .25s ease
+			z-index: 1
+			position: absolute
+			border: 1px solid #fff
+			top: 10px
+			right: 10px
+			bottom: 10px
+			left: 10px
+		p, h1, h2
+			margin: 0
+		h1, h2
+			font-size: 30px
+			text-transform: uppercase
+			margin-bottom: 15px
+	&.overlay
+		&:hover
+			&::before
+				opacity: 0.25
+
+
+.cat-list-first
+	padding-top: $gutter
+	background-color: #f5f5f5
+
+.type-one-cat
+	background-color: transparent
+	padding: 0
+
+	// ALWAYS END
 @import "media"
